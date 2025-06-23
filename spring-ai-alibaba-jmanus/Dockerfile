@@ -1,0 +1,28 @@
+# 运行阶段
+FROM registry.cn-hangzhou.aliyuncs.com/jast-docker/openjdk:17-slim
+
+# 设置工作目录
+WORKDIR /app
+
+# 从构建阶段复制构建好的jar
+COPY target/app.jar ./app.jar
+
+# 创建日志目录
+RUN mkdir -p /app/logs
+
+# 日志目录仍然挂载为卷，便于查看日志
+VOLUME ["/app/logs"]
+
+# 设置环境变量
+ENV AI_DASHSCOPE_API_KEY=${AI_DASHSCOPE_API_KEY} \
+    TZ=Asia/Shanghai
+
+# 暴露应用端口
+EXPOSE 8080
+
+# 启动命令，添加JVM优化参数
+ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-XX:MaxRAMPercentage=75.0", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]
+
+# 健康检查
+HEALTHCHECK --interval=30s --timeout=3s \
+  CMD wget -q -O /dev/null http://localhost:8080/actuator/health || exit 1
