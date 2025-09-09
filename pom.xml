@@ -20,7 +20,7 @@
     <artifactId>spring-ai-alibaba</artifactId>
     <version>${revision}</version>
 
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <name>Spring AI Alibaba</name>
     <description>Building AI applications with Spring Boot</description>
@@ -46,152 +46,6 @@
             <organizationUrl>https://aliyun.com</organizationUrl>
         </developer>
     </developers>
-
-    <modules>
-        <!-- Spring AI Alibaba Modules -->
-        <module>spring-ai-alibaba-bom</module>
-        <module>spring-ai-alibaba-mcp</module>
-        <module>spring-ai-alibaba-a2a</module>
-        <module>spring-ai-alibaba-core</module>
-        <module>spring-ai-alibaba-prompt</module>
-        <module>spring-ai-alibaba-graph-core</module>
-        <module>spring-ai-alibaba-nl2sql</module>
-        <module>spring-ai-alibaba-studio</module>
-        <module>spring-ai-alibaba-jmanus</module>
-        <module>spring-ai-alibaba-deepresearch</module>
-
-        <!-- Spring AI Alibaba Tool Call Plugins -->
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-common</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-time</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-aliyunaisearch</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidusearch</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidutranslate</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidumap</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-bravesearch</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-dingtalk</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-sensitivefilter</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-amap</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-googlescholar</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-weather</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-wikipedia</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-larksuite</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-microsofttranslate</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-jinacrawler</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-firecrawl</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-regex</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-jsonprocessor</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-serpapi</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-githubtoolkit</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-sinanews</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-toutiaonews</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-yuque</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-kuaidi100</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-googletranslate</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-googletrends</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-alitranslate</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-youdaotranslate</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-duckduckgo</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-tavilysearch</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-searches</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-worldbankdata</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-tencentmap</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-tushare</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-ollamasearchmodel</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-minio</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-memcached</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-metaso</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-openalex</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-opentripmap</module>
-        <module>community/tool-calls/spring-ai-alibaba-starter-tool-calling-tripadvisor</module>
-
-        <!-- Spring AI Alibaba Document Readers -->
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-arxiv</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-github</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-poi</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-tencent-cos</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-larksuite</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-yuque</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-obsidian</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-onenote</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-notion</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-chatgpt-data</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-gpt-repo</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-gitlab</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-gitbook</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-huggingface-fs</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-email</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-mbox</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-mongodb</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-mysql</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-sqlite</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-bilibili</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-youtube</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-elasticsearch</module>
-        <module>community/document-readers/spring-ai-alibaba-starter-document-reader-archive</module>
-
-        <!-- Spring AI Alibaba Document Parsers -->
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-apache-pdfbox</module>
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-markdown</module>
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-tika</module>
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-pdf-tables</module>
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-bshtml</module>
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-bibtex</module>
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-multi-modality</module>
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-directory</module>
-        <module>community/document-parsers/spring-ai-alibaba-starter-document-parser-yaml</module>
-
-        <!-- Spring AI Alibaba Vector Stores -->
-        <module>community/vector-stores/spring-ai-alibaba-starter-tair-store</module>
-        <module>community/vector-stores/spring-ai-alibaba-starter-analyticdb-store</module>
-        <module>community/vector-stores/spring-ai-alibaba-starter-opensearch-store</module>
-        <module>community/vector-stores/spring-ai-alibaba-starter-oceanbase-store</module>
-        <module>community/vector-stores/spring-ai-alibaba-starter-tablestore-store</module>
-
-        <!-- Spring AI Alibaba Chat Memory Support -->
-        <module>community/memories/spring-ai-alibaba-starter-memory-redis</module>
-        <module>community/memories/spring-ai-alibaba-starter-memory-jdbc</module>
-        <module>community/memories/spring-ai-alibaba-starter-memory-elasticsearch</module>
-        <module>community/memories/spring-ai-alibaba-starter-memory-mongodb</module>
-        <module>community/memories/spring-ai-alibaba-starter-memory-tablestore</module>
-        <module>community/memories/spring-ai-alibaba-starter-memory-memcached</module>
-        <module>community/memories/spring-ai-alibaba-starter-memory-mem0</module>
-
-        <module>auto-configurations/spring-ai-alibaba-autoconfigure-memory</module>
-
-        <!-- Spring AI Alibaba ARMS Extension -->
-        <module>auto-configurations/spring-ai-alibaba-autoconfigure-arms-observation</module>
-
-        <!-- Spring AI Alibaba Autoconfigure -->
-        <module>auto-configurations/spring-ai-alibaba-autoconfigure-dashscope</module>
-
-        <!-- Spring AI Alibaba MCP -->
-        <!-- Nacos3 version -->
-        <module>auto-configurations/spring-ai-alibaba-autoconfigure-mcp-registry</module>
-
-        <module>auto-configurations/spring-ai-alibaba-autoconfigure-mcp-router</module>
-
-        <!-- Spring AI Alibaba Nacos Prompt Template -->
-        <module>auto-configurations/spring-ai-alibaba-autoconfigure-nacos-prompt</module>
-
-        <!-- Spring AI Alibaba Graph Observation -->
-        <module>auto-configurations/spring-ai-alibaba-autoconfigure-graph-observation</module>
-
-        <!-- Sprint AI Alibaba A2A Server -->
-        <module>auto-configurations/spring-ai-alibaba-autoconfigure-a2a-server</module>
-
-        <!-- Spring AI Alibaba Spring Boot Starters -->
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-memory</module>
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-dashscope</module>
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-nacos-prompt</module>
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-arms-observation</module>
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-mcp-registry</module>
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-mcp-router</module>
-
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-nl2sql</module>
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-graph-observation</module>
-        <module>spring-ai-alibaba-spring-boot-starters/spring-ai-alibaba-starter-a2a-server</module>
-
-    </modules>
 
     <scm>
         <connection>git://github.com/alibaba/spring-ai-alibaba.git</connection>
@@ -315,6 +169,9 @@
         <spotless.version>2.44.5</spotless.version>
 
         <central.publishing.maven.version>0.7.0</central.publishing.maven.version>
+
+        <testcontainers.version>1.19.3</testcontainers.version>
+        <httpclient.version>4.5.14</httpclient.version>
     </properties>
 
     <dependencyManagement>
@@ -351,6 +208,226 @@
 
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.a2asdk</groupId>
+            <artifactId>a2a-java-reference-server</artifactId>
+            <version>${a2a-sdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.a2asdk</groupId>
+            <artifactId>a2a-java-sdk-server-common</artifactId>
+            <version>${a2a-sdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.a2asdk</groupId>
+            <artifactId>a2a-java-sdk-client</artifactId>
+            <version>${a2a-sdk.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-commons</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-retry</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-autoconfigure-retry</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-core</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-document-parser-tika</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-document-parser-markdown</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-document-parser-bshtml</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-document-parser-yaml</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.docker-java</groupId>
+            <artifactId>docker-java</artifactId>
+            <version>${docker-java}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.docker-java</groupId>
+            <artifactId>docker-java-core</artifactId>
+            <version>${docker-java}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.docker-java</groupId>
+            <artifactId>docker-java-transport-zerodep</artifactId>
+            <version>${docker-java}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${commons-collections4.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-exec</artifactId>
+            <version>${commons-exec.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${commons-codec.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>${redission.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-sync</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>io.modelcontextprotocol.sdk</groupId>
+            <artifactId>mcp</artifactId>
+            <version>${mcp.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-api</artifactId>
+            <version>${opentelemetry.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.12.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>mockwebserver</artifactId>
+            <version>4.12.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- TestContainers -->
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>testcontainers</artifactId>
+            <version>${testcontainers.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${testcontainers.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- H2 Database for testing -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- HikariCP for connection pooling in tests -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <repositories>
         <repository>
